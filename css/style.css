@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+aside {
+    width: 15vw;
+    height: 100dvh;
+    background-color: black;
+    position: fixed;
+
+}
+
+section {
+    width: 85vw;
+    height: 100dvh;
+    background-color: blue;
+    margin-left: 15vw;
+    overflow-y: scroll;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+ul a {
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}   
+
+ul a:not([aria-current="inicio"]), ul a[aria-current="inicio"] {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+  
+}
+
+ul a[aria-current="inicio"] {
+   background-color: blueviolet;
+}
